@@ -21,6 +21,10 @@ li {
 body {
     background-color: #colors [backgroundColor];
     color: #colors [textColor];
+    
+    @media @breakpointMobile {
+        padding: 50px 0;    
+    }
 }
 
 .container {
@@ -34,6 +38,8 @@ body {
     
     @media @breakpointMobile {
         width: 70%;
+        height: auto;
+        margin-bottom: 20px;
     }
 
     @media @breakpointTablet {
@@ -43,7 +49,7 @@ body {
 
 header {
     padding-bottom: 24px;
-
+    
     .profile-avatar {
         display: block;
         margin: 0 auto 24px;
